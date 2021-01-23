@@ -5,19 +5,19 @@ module.exports = {
     node: true
   },
   extends: [
-    "eslint:recommended",
+    'eslint:recommended',
   ],
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true
     },
     ecmaVersion: 12,
-    sourceType: "module"
+    sourceType: 'module'
   },
   plugins: [
-    "react",
-    "@typescript-eslint"
+    'react',
+    '@typescript-eslint'
   ],
   overrides: [
     // This configuration will apply only to TypeScript files
@@ -36,6 +36,7 @@ module.exports = {
         'plugin:react/recommended', // React rules
         'plugin:react-hooks/recommended', // React hooks rules
         'plugin:jsx-a11y/recommended', // Accessibility rules
+        'plugin:prettier/recommended'
       ],
       rules: {
         'react/prop-types': 'off',
